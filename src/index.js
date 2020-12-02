@@ -8,7 +8,7 @@ import CameraKitCameraScreen from "./CameraScreen/CameraKitCameraScreen";
 const { CameraKit } = NativeModules;
 
 export default CameraKit;
-
+//view creator
 export {
   CameraKitGallery,
   CameraKitCamera,
