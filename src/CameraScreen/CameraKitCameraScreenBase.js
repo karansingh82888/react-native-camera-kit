@@ -266,7 +266,7 @@ export default class CameraScreenBase extends Component {
   renderBottomButtons() {
     return !this.props.hideControls && (
       <SafeAreaView style={[styles.bottomButtons, { backgroundColor: '#ffffff00' }]}>
-        {this.renderBottomButton('left')}
+        {/* {this.renderBottomButton('left')} */}
         {this.renderCaptureButton()}
       </SafeAreaView>
     );
@@ -329,10 +329,10 @@ const styles = StyleSheet.create(_.merge(styleObject, {
   },
   topButtons: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
+    alignItems:'flex-end',
     paddingTop: 8,
-    paddingBottom: 0,
+    marginTop: 15,
   },
   cameraContainer: {
     flex: 10,
