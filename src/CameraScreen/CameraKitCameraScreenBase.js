@@ -119,9 +119,9 @@ export default class CameraScreenBase extends Component {
 
   renderFlashButton() {
     return !this.isCaptureRetakeMode() &&
-      <TouchableOpacity style={{ paddingHorizontal: 15 }} onPress={() => this.onSetFlash(FLASH_MODE_AUTO)}>
+      <TouchableOpacity style={{ paddingHorizontal: 15,height:40 }} onPress={() => this.onSetFlash(FLASH_MODE_AUTO)}>
         <Image
-          style={{ flex: 1, justifyContent: 'center' }}
+          style={{ flex: 1, justifyContent: 'center'}}
           source={this.state.flashData.image}
           resizeMode="contain"
         />
@@ -130,7 +130,7 @@ export default class CameraScreenBase extends Component {
 
   renderSwitchCameraButton() {
     return (this.props.cameraFlipImage && !this.isCaptureRetakeMode()) &&
-      <TouchableOpacity style={{ paddingHorizontal: 15 }} onPress={this.onSwitchCameraPressed}>
+      <TouchableOpacity style={{ paddingHorizontal: 15 ,height:40 }} onPress={this.onSwitchCameraPressed}>
         <Image
           style={{ flex: 1, justifyContent: 'center' }}
           source={this.props.cameraFlipImage}
