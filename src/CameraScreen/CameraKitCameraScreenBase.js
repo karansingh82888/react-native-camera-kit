@@ -159,7 +159,7 @@ export default class CameraScreenBase extends Component {
             /> :
             <CameraKitCamera
               ref={(cam) => this.camera = cam}
-              style={{ flex: 1, justifyContent: 'flex-end' }}
+              style={{ flex: 1, justifyContent: 'flex-end',backgroundColor:"white" }}
               cameraOptions={this.state.cameraOptions}
               saveToCameraRoll={!this.props.allowCaptureRetake}
               showFrame={this.props.showFrame}
@@ -193,7 +193,7 @@ export default class CameraScreenBase extends Component {
           onPress={() => this.onCaptureImagePressed()}
         >
           <Image
-          style={{height:50,width:50}}
+          style={{height:70,width:70}}
             source={this.props.captureButtonImage}
             resizeMode="contain"
           />
