@@ -198,9 +198,9 @@ export default class CameraScreenBase extends Component {
             resizeMode="contain"
           />
           <View style={styles.textNumberContainer}>
-            <Text>
+               {false?<Text>
               {this.numberOfImagesTaken()}
-            </Text>
+            </Text>:<Text></Text>}
           </View>
 
         </TouchableOpacity>
