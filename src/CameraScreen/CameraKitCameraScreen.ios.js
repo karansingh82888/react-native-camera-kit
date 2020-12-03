@@ -6,8 +6,9 @@ export default class CameraScreen extends CameraScreenBase {
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: 'black' }} {...this.props}>
-        {this.renderTopButtons()}
+        
         {this.renderCamera()}
+    <View style={{position:"absolute",alignSelf:"flex-end"}}>{this.renderTopButtons()}</View>
         {this.renderRatioStrip()}
         {this.renderBottomButtons()}
       </View>
