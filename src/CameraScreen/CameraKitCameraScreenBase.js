@@ -193,6 +193,7 @@ export default class CameraScreenBase extends Component {
           onPress={() => this.onCaptureImagePressed()}
         >
           <Image
+          style={{height:50,width:50}}
             source={this.props.captureButtonImage}
             resizeMode="contain"
           />
@@ -335,7 +336,7 @@ const styles = StyleSheet.create(_.merge(styleObject, {
     marginTop: 15,
   },
   cameraContainer: {
-    flex: 10,
+    flex: Platform.OS=="android"?10:15,
     flexDirection: 'column',
   },
   captureButtonContainer: {
