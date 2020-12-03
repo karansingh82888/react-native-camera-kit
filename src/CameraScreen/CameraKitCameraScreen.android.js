@@ -15,7 +15,7 @@ export default class CameraScreen extends CameraScreenBase {
         {this.renderCamera()}
         {this.renderTopButtons()}
         {this.renderGap()}
-        {this.renderBottomButtons()}
+        <View style={{position:"absolute",alignSelf:"center",bottom:2}}>{this.renderBottomButtons()}</View>
       </View>
     );
   }
